@@ -7,16 +7,28 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - label: "Home"
-        name: "home"
-        file: "content/home.md"
+      - label: "Page: index"
+        name: "index"
+        file: "content/cats.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          # - { label: "Body", name: "body", widget: "markdown" }
           - label: "Cats"
             name: "cats"
             widget: list
             fields:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
+      - label: "Page: people"
+        name: "people"
+        file: "content/people.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - label: "People"
+            name: "people"
+            widget: list
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Age", name: "age", widget: "number" }
