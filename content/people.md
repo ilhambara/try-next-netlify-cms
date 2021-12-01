@@ -1,7 +1,9 @@
 ---
 title: List of People
-date:
+date: 2021-12-01T16:16:45.472Z
 people:
-  - name:
-    age:
+  - name: Jabari Conley
+    age: 26
+  - name: Hezekiah Graves
+    age: 32
 ---
