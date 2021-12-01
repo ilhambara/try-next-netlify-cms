@@ -1,10 +1,10 @@
-# Content Management Site using Next.js and NetlifyCMS (Minimal Setup)
+# Automate Deploy for Next.js site using NetlifyCMS (Minimal Setup)
 
-## Deploy Status
+
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7a9370a8-6ea6-489f-acc2-89dc01c03121/deploy-status)](https://app.netlify.com/sites/exp-barathrum/deploys)
 
-Deployed to Netlify with CI/CD - Continuous Integration (CI) dan Continuous Delivery (CD) from this GitHub repository.
+Deployed to Netlify with CI/CD - Continuous Integration (CI) dan Continuous Delivery (CD).
 
 ## Getting Started
 
