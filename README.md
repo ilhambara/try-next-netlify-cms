@@ -4,13 +4,13 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7a9370a8-6ea6-489f-acc2-89dc01c03121/deploy-status)](https://app.netlify.com/sites/exp-barathrum/deploys)
 
-Deployed to Netlify with CI/CD - Continuous Integration (CI) dan Continuous Delivery (CD).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+And deployed to Netlify with CI/CD applied - Continuous Integration (CI) dan Continuous Delivery (CD).
 
 ## Getting Started
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-First, Install required packages:
+First, Install the required packages:
 
 ```bash
 npm install
