@@ -29,6 +29,8 @@ export default function SwiperItem({ people }) {
         navigation={true}
       >
         {people.map((person, key) => {
+          const link = person.href;
+
           return (
             <SwiperSlide key={key}>
               <Stack
@@ -61,12 +63,13 @@ export default function SwiperItem({ people }) {
                     {/* <ModalProduct spesification={spesification} /> */}
 
                     <Button
-                      rightIcon={<PhoneIcon />}
                       as="a"
+                      href={link}
+                      rightIcon={<PhoneIcon />}
                       colorScheme="whatsapp"
                       variant="solid"
                       target="_blank"
-                      isDisabled
+                      isDisabled={link ? false : true}
                     >
                       Contact Us
                     </Button>

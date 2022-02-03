@@ -19,8 +19,6 @@ import SlidesView from "../components/swiper/Swiper";
 export default function Swiper() {
   const { title, date, people } = attributes;
 
-  console.log(people);
-
   // format date
   const getDate = new Date(date);
   const displayDate = getDate.toLocaleDateString("en-uk", {
