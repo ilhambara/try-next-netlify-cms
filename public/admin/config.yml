@@ -50,5 +50,7 @@ collections:
                   label: "Spesification",
                   name: "spesification",
                   widget: "list",
+                  allow_add: true,
+                  collapsed: true,
                   default: ["no item"],
                 }
