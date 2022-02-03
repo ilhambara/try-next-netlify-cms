@@ -46,4 +46,9 @@ collections:
                   choose_url: true,
                   default: "public/img/avatarz-tomas.png",
                 }
-                - { label: "Spesification", name: "spesification", widget: "list", default: ["no item"] }
+              - {
+                  label: "Spesification",
+                  name: "spesification",
+                  widget: "list",
+                  default: ["no item"],
+                }
