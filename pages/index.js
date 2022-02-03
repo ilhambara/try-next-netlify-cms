@@ -1,13 +1,12 @@
-import Head from 'next/head'
+import Head from "next/head";
 // import Image from 'next/image'
-import Script from 'next/script'
-import styles from '../styles/Home.module.css'
+import Script from "next/script";
+import styles from "../styles/Home.module.css";
 // import { Component } from 'react'
-import { attributes, react as HomeContent } from '../content/cats.md'
+import { attributes, react as HomeContent } from "../content/cats.md";
 
 export default function Home() {
-
-  const { title, date, cats } = attributes
+  const { title, date, cats } = attributes;
 
   return (
     <div className={styles.container}>
@@ -27,14 +26,12 @@ export default function Home() {
         <p className={styles.description}>Last Update on {date}</p>
 
         <div className={styles.grid}>
-          {
-            cats.map((cat, k) => (
-              <a key={k} className={styles.card}>
+          {cats.map((cat, k) => (
+            <a key={k} className={styles.card}>
               <h2>{cat.name} &rarr;</h2>
               <p>{cat.description}</p>
             </a>
-            ))
-          }
+          ))}
         </div>
       </main>
 
@@ -44,12 +41,9 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by {'Vercel'}
-          {/* <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span> */}
+          Powered by {"Vercel"}
         </a>
       </footer>
     </div>
-  )
+  );
 }
