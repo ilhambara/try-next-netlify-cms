@@ -33,7 +33,12 @@ collections:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Age", name: "age", widget: "number" }
               - { label: "Info", name: "info", widget: "string" }
-              - { label: "Link", name: "link", widget: "string" }
+              - {
+                  label: "Link",
+                  name: "link",
+                  widget: "string",
+                  default: false,
+                }
               - {
                   label: "Avatar",
                   name: "avatar",
