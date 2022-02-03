@@ -1,6 +1,6 @@
 ---
 title: List of People
-date: 2022-02-03T15:08:50.262Z
+date: 2022-02-03T15:10:26.096Z
 people:
   - name: Jabari Conley
     age: 22
