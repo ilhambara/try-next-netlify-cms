@@ -39,17 +39,7 @@ const ModalItem = ({ spesification }) => {
           <ModalHeader>Spesifikasi</ModalHeader>
           <ModalCloseButton />
 
-          <ModalBody my={6}>
-            {spesification.map((item, key) => {
-              {
-                /* <ListItem key={data}>{data}</ListItem> */
-              }
-              <>
-                <Text key={key}>{item}</Text>
-                <Divider my={4} />
-              </>;
-            })}
-          </ModalBody>
+          <ModalBody my={6}>Test</ModalBody>
 
           <ModalFooter>
             <Button onClick={onClose}>Tutup</Button>
