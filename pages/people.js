@@ -1,13 +1,21 @@
-import Head from 'next/head'
-// import Image from 'next/image'
-import Script from 'next/script'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+// import Image from "next/image";
+import Script from "next/script";
+import styles from "../styles/Home.module.css";
 // import { Component } from 'react'
-import { attributes, react as HomeContent } from '../content/people.md'
+import { attributes, react as HomeContent } from "../content/people.md";
+import {
+  Avatar,
+  Grid,
+  GridItem,
+  Heading,
+  HStack,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 
 export default function People() {
-
-  const { title, date, people } = attributes
+  const { title, date, people } = attributes;
 
   return (
     <div className={styles.container}>
@@ -20,22 +28,30 @@ export default function People() {
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          {title}
-        </h1>
+        <h1 className={styles.title}>{title}</h1>
 
         <p className={styles.description}>Last Update on {date}</p>
 
-        <div className={styles.grid}>
-          {
-            people.map((person, k) => (
-              <a key={k} className={styles.card}>
-              <h2>{person.name}</h2>
-              <p>{person.age} years old</p>
-            </a>
-            ))
-          }
-        </div>
+        <Grid templateColumns="repeat(3, 1fr)" gap={6}>
+          {people.map((person, k) => (
+            <GridItem
+              key={k}
+              w="100%"
+              h="100%"
+              p={6}
+              border="1px"
+              borderRadius="md"
+            >
+              <VStack spacing={6}>
+                <Avatar size="xl" name={person.name} src={person.avatar} />
+                <Heading as="h2" fontSize="3xl">
+                  {person.name}
+                </Heading>
+                <Text fontSize="lg">{person.age} years old</Text>
+              </VStack>
+            </GridItem>
+          ))}
+        </Grid>
       </main>
 
       <footer className={styles.footer}>
@@ -44,12 +60,12 @@ export default function People() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by {'Vercel'}
+          Powered by {"Vercel"}
           {/* <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span> */}
         </a>
       </footer>
     </div>
-  )
+  );
 }
