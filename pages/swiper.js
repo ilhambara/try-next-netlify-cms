@@ -38,7 +38,7 @@ export default function Swiper() {
 
       <main className={styles.main}>
         <Heading as="h1" fontSize="3rem" fontWeight="normal">
-          {title}
+          Slides/Swiper Example
         </Heading>
 
         <Text fontSize="1.5rem" my={8}>

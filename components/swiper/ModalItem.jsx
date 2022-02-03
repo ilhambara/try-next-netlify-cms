@@ -11,8 +11,11 @@ import {
   ModalCloseButton,
   Text,
   Divider,
-  Box,
+  ListItem,
+  ListIcon,
+  List,
 } from "@chakra-ui/react";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 
 const ModalItem = ({ spesification }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -29,6 +32,7 @@ const ModalItem = ({ spesification }) => {
         variant="outline"
         colorScheme="black"
         onClick={() => handleSizeClick("xl")}
+        isDisabled={spesification ? false : true}
       >
         Spesifikasi
       </Button>
@@ -39,7 +43,17 @@ const ModalItem = ({ spesification }) => {
           <ModalHeader>Spesifikasi</ModalHeader>
           <ModalCloseButton />
 
-          <ModalBody my={6}>Test</ModalBody>
+          <ModalBody my={6}>
+            {spesification.map((item, key) => (
+              <List key={key}>
+                <ListItem>
+                  <ListIcon as={ChevronRightIcon} color="green.600" />
+                  {item}
+                </ListItem>
+                <Divider my={4} />
+              </List>
+            ))}
+          </ModalBody>
 
           <ModalFooter>
             <Button onClick={onClose}>Tutup</Button>
