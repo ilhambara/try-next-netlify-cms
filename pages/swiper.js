@@ -14,10 +14,12 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import PeopleCard from "../components/cards/PeopleCard";
+import SlidesView from "../components/swiper/Swiper";
 
-export default function People() {
+export default function Swiper() {
   const { title, date, people } = attributes;
+
+  console.log(people);
 
   // format date
   const getDate = new Date(date);
@@ -31,7 +33,7 @@ export default function People() {
   return (
     <Container maxW="container.xl">
       <Head>
-        <title>People | NetlifyCMS with Next Js</title>
+        <title>Swiper for People | NetlifyCMS with Next Js</title>
       </Head>
 
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
@@ -48,7 +50,7 @@ export default function People() {
           </Badge>
         </Text>
 
-        <PeopleCard people={people} />
+        <SlidesView people={people} />
       </main>
 
       <footer className={styles.footer}>

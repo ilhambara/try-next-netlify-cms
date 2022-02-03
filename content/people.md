@@ -15,7 +15,7 @@ people:
       don’t do that anymore. - Neil Gaiman"
   - name: Ilham Bara
     age: 22
-    avatar: /img/avatarz-tomas.png
+    avatar: img/avatarz-tomas.png
     info: "Your visions will become clear only when you can look into your own
       heart. Who looks outside, dreams; who looks inside, awakens. - C.G. Jung"
 ---
