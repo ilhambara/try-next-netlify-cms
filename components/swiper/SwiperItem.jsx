@@ -33,8 +33,6 @@ export default function SwiperItem({ people }) {
           const link = person.link;
           const spesification = person.spesification;
 
-          console.log(spesification);
-
           return (
             <SwiperSlide key={key}>
               <Stack

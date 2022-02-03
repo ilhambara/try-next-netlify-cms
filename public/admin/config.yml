@@ -52,5 +52,5 @@ collections:
                   widget: "list",
                   allow_add: true,
                   collapsed: true,
-                  default: ["no item"],
+                  required: false,
                 }

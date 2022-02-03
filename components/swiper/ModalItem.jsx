@@ -18,6 +18,8 @@ import {
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
 const ModalItem = ({ spesification }) => {
+  const notEmpty = spesification.length !== 0; // check if array is not empty
+
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [size, setSize] = React.useState("md");
 
@@ -32,7 +34,7 @@ const ModalItem = ({ spesification }) => {
         variant="outline"
         colorScheme="black"
         onClick={() => handleSizeClick("xl")}
-        isDisabled={spesification ? false : true}
+        isDisabled={notEmpty ? false : true}
       >
         Spesifikasi
       </Button>
