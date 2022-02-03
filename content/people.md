@@ -7,6 +7,8 @@ people:
     avatar: img/avatarz-4.png
     info: The only difference between a problem and a solution is that people
       understand the solution. - Charles F. Kettering, 1876 - 1958
+    spesification:
+      - female
   - name: Hezekiah Graves
     age: 30
     avatar: img/avatarz-5.png
