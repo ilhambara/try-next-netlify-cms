@@ -16,6 +16,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { PhoneIcon } from "@chakra-ui/icons";
+import ModalItem from "./ModalItem";
 
 SwiperCore.use([Pagination, Navigation]);
 
@@ -29,7 +30,8 @@ export default function SwiperItem({ people }) {
         navigation={true}
       >
         {people.map((person, key) => {
-          const link = person.href;
+          const link = person.link;
+          const spesification = person.spesification;
 
           return (
             <SwiperSlide key={key}>
@@ -60,7 +62,7 @@ export default function SwiperItem({ people }) {
                   <Text fontSize="xl">{person.info}</Text>
 
                   <ButtonGroup size="md" spacing={4}>
-                    {/* <ModalProduct spesification={spesification} /> */}
+                    <ModalItem spesification={spesification} />
 
                     <Button
                       as="a"
